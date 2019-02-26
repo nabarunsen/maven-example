@@ -67,4 +67,18 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <!-- use the following if you're not using a snapshot version. -->
+        <repository>
+            <id>maven-repo</id>
+            <name>RepositoryProxyRel</name>
+            <url>http://52.221.205.180:8081/artifactory</url>
+        </repository>
+        <!-- use the following if you ARE using a snapshot version. -->
+        <snapshotRepository>
+            <id>maven-repo</id>
+            <name>RepositoryProxySnap</name>
+            <url>http://52.221.205.180:8081/artifactory</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
